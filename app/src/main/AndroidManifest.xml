@@ -14,7 +14,7 @@
         tools:targetApi="31">
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCiTpugqiFiVAartuLpExAzLHECxelS9EY" />
+            android:value="PLACEHOLDER" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -22,7 +22,6 @@
             android:theme="@style/Theme.PolygonQ2">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

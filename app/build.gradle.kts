@@ -6,18 +6,15 @@ plugins {
 
 android {
     namespace = "com.example.polygonq2"
-    compileSdk = 35  // Updated compileSdk to 35
-
+    compileSdk = 35
     defaultConfig {
         applicationId = "com.example.polygonq2"
         minSdk = 27
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
-
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -27,16 +24,13 @@ android {
             )
         }
     }
-
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
-
     kotlinOptions {
         jvmTarget = "11"
     }
-
     buildFeatures {
         compose = true
     }
@@ -58,11 +52,7 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-
-    // Google Maps dependencies
     implementation("com.google.android.gms:play-services-maps:18.1.0")
     implementation("com.google.maps.android:maps-compose:2.0.0")
-
-    // Google Services
     implementation("com.google.gms:google-services:4.3.15")
 }
